@@ -1,0 +1,27 @@
+//Pseudocode
+
+//Start
+//Initialize array ‘grades’ to size [10]
+//For i from 0 to 9:
+    //While True: loop until valid float is entered:
+    //Prompt user for grade + (i + 1)
+    //Get user input, Vvlidate input to ensure a floating-point number
+    //Store in grades [i]
+//Else: Output “Invalid input. Enter a Valid Decimal value”
+	  //Discard the invalid input
+
+//Initialize sum to 0
+//For each grade in grades:
+     //sum = sum + grade average
+
+//average = sum / 10
+
+//initialize max to grades [0]
+//initialize min to grades [0]	
+//for I from 1 to 9:
+    //if grades [i] > max: max = grades [i]
+    //if grades[i] < min: min = grades [i]
+//Output “Average: ” average + format to 2 decimal
+//Output “Maximum: ” max + format to 2 decimal
+//Output “Minimum: ” min + format to 2 decimal
+//end
