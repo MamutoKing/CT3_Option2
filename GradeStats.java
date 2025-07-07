@@ -1,14 +1,15 @@
 //Create Scanner
-import java.util.Scanner
+import java.util.Scanner;
 
 public class GradeStats{
     public static void main (String[] args){
         Scanner scanner = new Scanner (System.in);
 
-//Initialize array        
-        float[] grades = new float[10];
+//Initialize array 
+        final int NUM_GRADES = 10;
+        float[] grades = new float [NUM_GRADES];
 //For loop to add grades to array       
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < NUM_GRADES; i++){
             while (true){
                 System.out.print("Enter grade " + (i+1) + ": ");
                 if (scanner.hasNextFloat()){
@@ -29,20 +30,20 @@ public class GradeStats{
             sum += grade;
         }
 //Calc Average
-        float average = sum / 10;
+        float average = sum / NUM_GRADES;
 
-//Initilize Max and Min
+//Initialize Max and Min
         float max = grades[0];
         float min = grades[0];
-        for (int i = 1; i < 10; i++){
+        for (int i = 1; i < NUM_GRADES; i++){
             if (grades[i] > max) max = grades[i];
             if (grades[i] < min) min = grades[i];
         }
         
 //Output Results
-        System.out.printf("Average: %.2f/n", average);
-        System.out.printf("Maximum: %.2f/n", max);
-        System.out.printf("Minimum: %.2f/n", min);
+        System.out.printf("Average: %.2f\n", average);
+        System.out.printf("Maximum: %.2f\n", max);
+        System.out.printf("Minimum: %.2f\n", min);
 
         scanner.close();     
     }
