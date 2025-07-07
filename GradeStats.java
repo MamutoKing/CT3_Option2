@@ -8,7 +8,7 @@ public class GradeStats{
 //Initialize array 
         final int NUM_GRADES = 10;
         float[] grades = new float [NUM_GRADES];
-//For loop to add grades to array       
+//Loop to read grades into array       
         for (int i = 0; i < NUM_GRADES; i++){
             while (true){
                 System.out.print("Enter grade " + (i+1) + ": ");
@@ -17,7 +17,7 @@ public class GradeStats{
                     break;    
                 } else {
                     System.out.println ("Invalid input. Please enter with a Valid Decimal value.");
-//consume the invalid input
+//Consume the invalid input
                     scanner.next();
                 }
 
